@@ -26,10 +26,8 @@ export const UsersList = memo(() => {
                     <th className='thstyle'>Name</th>
                     <th className='thstyle'>Surname</th>
                     <th className='thstyle'>Age</th>
-                    <th className='thstyle'>Gender</th>
                     <th className='thstyle'>Email</th>
                     <th className='thstyle'>Actions</th>
-                   
                 </tr>
                 </thead>
                 <tbody>
@@ -38,11 +36,11 @@ export const UsersList = memo(() => {
                         <td className='tdStyle'>{user.Name}</td>
                         <td className='tdStyle'>{user.Surname}</td>
                         <td className='tdStyle'>{user.Age}</td>
-                        <td className='tdStyle'>{user.Gender}</td> 
-                         <td className='tdStyle'>{user.Email}</td>
+                        <td className='tdStyle'>{user.Email}</td>
                         <td className='tButtons tdStyle'>
+                            <Button className='update' text='Update' />
                             <Button onClick={() => handleDelete(user.id)} className='delete' text='Delete' />
-                            <Button onClick={() => navigate(`/moreinfo/${user?.id}`)} className='Details page' text='Details page' />
+                            <Button onClick={() => navigate(`/moreinfo/${user?.id}`)} className='view' text='View' />
                         </td>
                     </tr>
                 ))}

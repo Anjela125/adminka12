@@ -34,7 +34,7 @@ export const Registration = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 1000)
+        }, 2000)
 
     }, [list])
 
@@ -80,12 +80,9 @@ export const Registration = () => {
                             pattern={/\d+/}
                             errors={errors.Age}
                             errorMassage={'Please enter number for Age.'}
+                        />
 
-                        /><p>Gender</p>
-                         <input type="radio" name="gender" value="male"/>Male
-                         <input type="radio" name="gender" value="female" />Female
-                        <input type="submit" value='Create'/>
-                      
+                        <input type="submit" value='send'/>
                     </form>
                     <UsersList/>
                 </div>

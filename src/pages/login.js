@@ -3,8 +3,8 @@ import {useForm} from "react-hook-form"
 
 import {Input} from "../components/input"
 
-const email = 'anjela@gmail.com'
-const password = 'Anjela20@'
+const email = 'admin@gmail.com'
+const password = 'password'
 
 const Login = () => {
     const navigate = useNavigate()
@@ -31,7 +31,7 @@ const Login = () => {
 
     return (
         <div className={'login-page'}>
-            <h2>Sign In </h2>
+            <h2>LOG IN!</h2>
             <form className={'login-form'} onSubmit={handleSubmit(onSubmit)}>
                 <Input
                     className={'login-input'}
@@ -52,7 +52,7 @@ const Login = () => {
                     errors={errors.Password}
                     errorMassage={'Invalid Password.'}
                 />
-                <input className={'login-submit'} type="submit" value='Sign in'/>
+                <input className={'login-submit'} type="submit" value='LOG IN'/>
             </form>
         </div>
     )

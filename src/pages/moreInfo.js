@@ -21,27 +21,22 @@ export const MoreInfo = () => {
                 </div>
                 <div className={'personal-info'}>
                     <div>
-                        <span>name:</span>
+                        <span>NAME:</span>
                         <p>{current.Name}</p>
                     </div>
                     <div>
-                        <span> surname:</span>
+                        <span>SURNAME:</span>
                         <p>{current.Surname}</p>
                     </div>
                     <div>
-                        <span>Age:</span>
+                        <span>AGE:</span>
                         <p>{current.Age}</p>
                     </div>
                     <div>
-                        <span>email:</span>
+                        <span>EMAIL:</span>
                         <p>{current.Email}</p>
                     </div>
-                    <div>
-                        <span>Gender:</span>
-                        <p>{current.Gender}</p>
-                    </div>
-                    
-                    <Button className={'more-info-button'} text={'user list'} onClick={() => navigate('/home')}/>
+                    <Button className={'more-info-button'} text={'HOME'} onClick={() => navigate('/home')}/>
                 </div>
 
             </div>
